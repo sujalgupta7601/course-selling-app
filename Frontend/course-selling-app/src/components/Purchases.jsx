@@ -33,7 +33,7 @@ const Purchases = () => {
 
   const handleLogut = async () => {
     try {
-      const resp = await axios.get(`${BACKEND_URL}/user/logout, {
+      const resp = await axios.get(`${BACKEND_URL}/user/logout`, {
         withCredentials: true,
       });
 
