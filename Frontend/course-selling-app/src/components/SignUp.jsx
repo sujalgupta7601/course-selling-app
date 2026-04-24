@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import { BACKEND_URL } from "../../utils/utils";
 
 
 const SignUp = () => {
@@ -30,7 +31,7 @@ const SignUp = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-      const resp=await axios.post("http://localhost:4001/api/v1/user/signUp",formData
+      const resp=await axios.post(`${BACKEND_URL}/user/signUp`,formData
         ,{
           withCredentials:true,
           headers:{

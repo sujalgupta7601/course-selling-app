@@ -13,7 +13,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { CiLogout } from "react-icons/ci";
-
+import { BACKEND_URL } from "../../utils/utils";
 const Purchases = () => {
   const navigate = useNavigate();
   const [courses, setcourses] = useState([]);
@@ -33,7 +33,7 @@ const Purchases = () => {
 
   const handleLogut = async () => {
     try {
-      const resp = await axios.get("http://localhost:4001/api/v1/user/logout", {
+      const resp = await axios.get(`${BACKEND_URL}/user/logout, {
         withCredentials: true,
       });
 
@@ -53,7 +53,7 @@ const Purchases = () => {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4001/api/v1/user/purchased",
+          `${BACKEND_URL}/user/purchased`,
           {
             withCredentials: true,
             headers: {

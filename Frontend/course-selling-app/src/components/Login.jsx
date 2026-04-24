@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import { BACKEND_URL } from "../../utils/utils";
 
 const Login = () => {
   const navigate = useNavigate();

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { BACKEND_URL } from "../../utils/utils";
 
 const OurCourses = () => {
   const [courses, setcourses] = useState([]);
@@ -17,7 +18,7 @@ const OurCourses = () => {
       try {
         setisLoading(true);
         const response = await axios.get(
-          "http://localhost:4001/api/v1/course/courses",
+          `${BACKEND_URL}/course/courses`,
           {
             withCredentials: true,
             headers: {
@@ -46,7 +47,7 @@ const OurCourses = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:4001/api/v1/course/delete/${id}`,
+        `${BACKEND_URL}/course/delete/${id}`,
         {
           withCredentials: true,
           headers: {
