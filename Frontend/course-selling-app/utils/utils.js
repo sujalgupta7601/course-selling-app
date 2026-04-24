@@ -1,1 +1,1 @@
-export const BACKEND_URL="https://course-selling-app-1-nk05.onrender.com"
+export const BACKEND_URL="https://course-selling-app-ks1d.vercel.app/"

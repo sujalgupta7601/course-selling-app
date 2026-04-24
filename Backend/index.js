@@ -25,7 +25,7 @@ const DB_URI = process.env.MONGO_URI;
 
 app.use(
   cors({
-    origin: "https://course-selling-app-tdll.vercel.app/",
+    origin: "https://course-selling-app-ks1d.vercel.app/",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
