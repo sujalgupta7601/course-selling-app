@@ -28,7 +28,7 @@ const AdminLogin = () => {
     e.preventDefault();
     try {
       const resp = await axios.post(
-        `${BACKEND_URL}/admin/login`,
+        `${BACKEND_URL}api/v1/admin/login`,
         formData,
         {
           withCredentials: true,

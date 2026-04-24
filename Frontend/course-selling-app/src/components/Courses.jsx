@@ -53,7 +53,7 @@ const Courses = () => {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          `${BACKEND_URL}/course/courses`,
+          `${BACKEND_URL}api/v1/course/courses`,
           {
             withCredentials: true,
           },

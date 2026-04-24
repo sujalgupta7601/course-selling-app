@@ -27,7 +27,7 @@ const Buy = () => {
       }
       try {
         const response = await axios.post(
-          `${BACKEND_URL}/course/buy/${courseId}`,
+          `${BACKEND_URL}api/v1/course/buy/${courseId}`,
           {},
           {
             withCredentials: true,

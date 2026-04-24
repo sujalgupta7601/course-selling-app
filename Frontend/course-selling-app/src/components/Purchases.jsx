@@ -33,7 +33,7 @@ const Purchases = () => {
 
   const handleLogut = async () => {
     try {
-      const resp = await axios.get(`${BACKEND_URL}/user/logout`, {
+      const resp = await axios.get(`${BACKEND_URL}api/v1/user/logout`, {
         withCredentials: true,
       });
 
@@ -53,7 +53,7 @@ const Purchases = () => {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          `${BACKEND_URL}/user/purchased`,
+          `${BACKEND_URL}api/v1/user/purchased`,
           {
             withCredentials: true,
             headers: {

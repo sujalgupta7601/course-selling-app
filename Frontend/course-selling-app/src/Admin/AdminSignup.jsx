@@ -31,7 +31,7 @@ const AdminSignup = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-      const resp=await axios.post(`${BACKEND_URL}/admin/signUp`,formData
+      const resp=await axios.post(`${BACKEND_URL}api/v1/admin/signUp`,formData
         ,{
           withCredentials:true,
           headers:{

@@ -27,7 +27,7 @@ const Login = () => {
   const handleSubmit =async (e) => {
     e.preventDefault();
     try{
-      const resp=await axios.post(`${BACKEND_URL}/user/login`,formData,
+      const resp=await axios.post(`${BACKEND_URL}api/v1/user/login`,formData,
         {
           withCredentials:true,
           headers:{

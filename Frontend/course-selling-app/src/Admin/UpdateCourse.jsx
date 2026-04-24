@@ -70,7 +70,7 @@ const UpdateCourse = () => {
 
     try {
       const response = await axios.put(
-        `${BACKEND_URL}/course/update/${courseId}`,
+        `${BACKEND_URL}api/v1/course/update/${courseId}`,
         formdata,
         {
           withCredentials: true,

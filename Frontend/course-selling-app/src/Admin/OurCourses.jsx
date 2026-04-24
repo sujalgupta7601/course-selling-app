@@ -47,7 +47,7 @@ const OurCourses = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `${BACKEND_URL}/course/delete/${id}`,
+        `${BACKEND_URL}api/v1/course/delete/${id}`,
         {
           withCredentials: true,
           headers: {

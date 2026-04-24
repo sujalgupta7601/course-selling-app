@@ -10,7 +10,7 @@ function Dashboard() {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get(`${BACKEND_URL}/admin/logout`, {
+      const response = await axios.get(`${BACKEND_URL}api/v1/admin/logout`, {
         withCredentials: true,
       });
       toast.success(response.data.message);

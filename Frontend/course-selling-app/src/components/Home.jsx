@@ -23,7 +23,7 @@ const Home = () => {
 
   const handleLogut = async () => {
     try {
-      const resp = await axios.get(`${BACKEND_URL}/user/logout`, {
+      const resp = await axios.get(`${BACKEND_URL}api/v1/user/logout`, {
         withCredentials: true,
       });
 
@@ -41,7 +41,7 @@ const Home = () => {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          `${BACKEND_URL}/course/courses`,
+          `${BACKEND_URL}api/v1/course/courses`,
           {
             withCredentials: true,
           },
